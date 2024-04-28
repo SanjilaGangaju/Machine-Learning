@@ -18,7 +18,7 @@ def descent_parser(x,y):
       cost=1/n*sum([val**2 for val in y-y_predicted])
       
       md=-2/n*sum(x*(y-y_predicted))
-      bd=2/n*sum(y-(y_predicted))
+      bd=-2/n*sum(y-(y_predicted))
 
       m=m-lr*md
       b=b-lr*bd
